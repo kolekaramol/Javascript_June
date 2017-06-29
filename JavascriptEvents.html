@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Javascript events</title>
+    <script>
+        function clickMe(x)
+        {
+            alert("welcome "+x);
+        }
+        function mouseOverMe(x)
+        {
+            alert("welcome "+x);
+        }
+        function mouseOut(x)
+        {
+            alert("welcome "+x);
+        }
+        function onDblClick(x)
+        {
+            alert("welcome "+x);
+        }
+        
+    </script>
+</head>
+    <button value="clickMe" onclick="clickMe(this.value)">Click ME</button>
+    <button value="doubleClickMe" ondblclick="onDblClick(this.value)">Double Click ME</button>
+    <button value="mouseOverMe" onmouseover="mouseOverMe(this.value)">Mouse Over ME</button>
+    <button value="mouseOut" onmouseout="mouseOut(this.value)">Mouse Out ME</button>
+</html>
