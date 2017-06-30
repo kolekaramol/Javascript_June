@@ -1,0 +1,144 @@
+<html>
+<head>
+    <title>Javascript Control Statements</title>
+    
+</head>
+    <body>
+        <h1>Javascript Control Statements</h1>
+    <label>Enter age</label>    <input type="text" value=""  id="input1" >
+        <input type="button" value="submit" onclick="checkAge()">
+        <input type="button" value="showDown" onclick="showDown()">
+         <input type="button" value="showUp" onclick="showUp()">
+        <input type="button" value="showFor" onclick="showFor()">
+        <input type="button" value="chooseMonth" onclick="showMonth()">
+    </body>
+    <script>
+        //example if condition
+        function checkAge()
+        {
+            var x= document.getElementById('input1').value;
+            var age=parseInt(x);
+            if(age<18)
+                {
+                    alert("Not valid voter");
+                }
+            else
+            {
+                alert('U can vote');
+            }
+        }
+        
+        //example of while loop
+        function showDown()
+        {
+            var x= parseInt(document.getElementById('input1').value);
+            while(x>0)
+                {
+                    alert("hello :"+x);
+                    x--;
+                }
+            
+            
+        }
+        
+        //example of while do loop
+        function showUp()
+        {
+            var x= parseInt(document.getElementById('input1').value);
+           do
+           {
+               alert("no is : "+x);
+               x++;
+           }while(x<=10);
+            
+            
+        }
+        
+         //example of for loop
+        function showFor()
+        {
+            var x= parseInt(document.getElementById('input1').value);
+           for(i=0;i<x;i++)
+               {
+                    alert("no shows here : "+i)
+                }
+            
+            
+        }
+        
+        //example of switch
+        
+        function showMonth()
+        {
+    var x=parseInt(document.getElementById('input1').value);
+            switch(x)
+                    {
+                case 1:
+                    {
+                        alert('u slected January month');
+                        break;
+                    }
+                case 2:
+                    {
+                        alert('u slected February month');
+                        break;
+                    }
+                    case 3:
+                    {
+                        alert('u slected March month');
+                        break;
+                    }
+                    case 4:
+                    {
+                        alert('u slected April month');
+                        break;
+                    }
+                    case 5:
+                    {
+                        alert('u slected May month');
+                        break;
+                    }
+                    case 6:
+                    {
+                        alert('u slected June month');
+                        break;
+                    }
+                    case 7:
+                    {
+                        alert('u slected July month');
+                        break;
+                    }
+                    case 8:
+                    {
+                        alert('u slected August month');
+                        break;
+                    }
+                     case 9:
+                    {
+                        alert('u slected september month');
+                        break;
+                    }
+                    case 10:
+                    {
+                        alert('u slected October month');
+                        break;
+                    }
+                    case 11:
+                    {
+                        alert('u slected November month');
+                        break;
+                    }
+                    case 12:
+                    {
+                        alert('u slected December month');
+                        break;
+                    }
+                    
+                default:
+                    {
+                        alert('u slected Wrong month');
+                    }
+                    }
+        }
+    </script>
+</html>

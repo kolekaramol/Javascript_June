@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Javascript Assignment</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel panel-heading">
+                <h1>Calculator</h1>
+            </div>
+            <div class="panel-body">
+                <table class="table table-responsive table-striped table-condensed table-bordered">
+                    <tr>
+                        <td>
+                            <label>Enter input 1</label>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" value="" id="input1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Enter input 2</label>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" value="" id="input2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Result</label>
+                        </td>
+                        <td>
+                            <label id="result">Result display here</label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron">
+                <div class="col-xs-2">
+                    <input type="button" class="btn btn-warning btn-lg" value="sum" onclick="sum()">
+                </div>
+                <div class="col-xs-2">
+                    <input type="button" class="btn btn-warning btn-lg" value="sub" onclick="sub()">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function sum()
+    {
+        var x=document.getElementById('input1').value;//string
+        var y=document.getElementById('input2').value;//string
+        var result=parseInt(x)+parseInt(y);
+        document.getElementById('result').innerHTML=result;
+       // alert(result);
+    }
+    function sub()
+    {
+        var x=document.getElementById('input1').value;//string
+        var y=document.getElementById('input2').value;//string
+        var result=parseInt(x)-parseInt(y);
+        document.getElementById('result').innerHTML=result;
+       // alert(result);
+    }
+</script>
+</html>
